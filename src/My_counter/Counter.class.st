@@ -22,6 +22,13 @@ Counter >> count: anInteger [
 ]
 
 { #category : #accessing }
+Counter >> decrement [
+"return the current value of the value instance variable"
+   count := count - 1
+
+]
+
+{ #category : #accessing }
 Counter >> increment [
 "return the current value of the value instance variable"
    count := count + 1

@@ -19,6 +19,14 @@ CounterTest >> testCounterIsSetAndRead [
 ]
 
 { #category : #'as yet unclassified' }
+CounterTest >> testDecrement [
+   | c |
+   c := Counter new count: 2.
+   c decrement; decrement.
+   self assert: c count equals: 0
+]
+
+{ #category : #'as yet unclassified' }
 CounterTest >> testIncrement [
    | c |
    c := Counter new count: 2.
